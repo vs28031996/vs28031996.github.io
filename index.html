@@ -201,6 +201,19 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
+                    <script>
+                      window.watsonAssistantChatOptions = {
+                          integrationID: "91f73bda-29c0-4429-8a03-0561eb94ca53", // The ID of this integration.
+                          region: "eu-gb", // The region your integration is hosted in.
+                          serviceInstanceID: "31ac2c78-aabf-4785-abad-6a7fad887579", // The ID of your service instance.
+                          onLoad: function(instance) { instance.render(); }
+                        };
+                      setTimeout(function(){
+                        const t=document.createElement('script');
+                        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                        document.head.appendChild(t);
+                      });
+                    </script>
                     <div class="footer-col col-md-6">
                         <h3>Location</h3>
                         <p>MMU Mullana<br>Ambala, Haryana</p>
